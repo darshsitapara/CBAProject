@@ -14,12 +14,17 @@ MySQL Server
 Dependencies listed in the requirements.txt
 
 Query Sales Data
-    GET Request
+    GET Request (JSON)
         Endpoint: /sales?start_date=YYYY-MM-DD&end_date=YYYY-MM-DD&format=json
         Example: http://localhost:5000/sales?start_date=2023-01-01&end_date=2023-02-28&format=json
-
+    GET Request (List)
+        Endpoint: /sales?start_date=YYYY-MM-DD&end_date=YYYY-MM-DD&format=list
+        Example: http://localhost:5000/sales?start_date=2023-01-01&end_date=2023-02-28&format=list
+    GET Request (Data Frame)
+        Endpoint: /sales?start_date=YYYY-MM-DD&end_date=YYYY-MM-DD&format=json
+        Example: Using Python (Example file GET.py)
 
 Add Sales Record
     POST Request
         Endpoint: /sales
-        Example: (Use POST.py)
+        Example: (Example file POST.py)
